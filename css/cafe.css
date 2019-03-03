@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore|Lobster|Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+/* global */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* padding: 20px; */
+}
+/* navigation */
+
+nav{
+  background-color:black;
+  padding:20px;
+  border-bottom: 2px solid red;
+}
+nav ul{
+  text-align:center;
+}
+
+nav ul li{
+display: inline-block;
+padding:0 12px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  font-size:16px;
+  font-weight: 300px;
+  display: block;
+  padding: 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+background: #f00;
+}
+
+/* showcase */
+
+.showcase{
+background-image: url(../img/show7.jpg);
+height:520px;
+background-size: cover;
+background-position: center;
+z-index: -1;
+}
+
+.content{
+  padding-top:200px;
+  text-align: center;
+  z-index: 1000;
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size:40px;
+  font-weight:400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* about */
+#about{
+  padding:90px 0 90px 0;
+  z-index: 3;
+  margin: 0 10rem;
+}
+.about-content{
+  display: block;
+  margin:0 5rem;
+}
+.heading{
+  color: #33baaf;
+  font-family: 'Hagin caps', Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+text-transform: uppercase;
+}
+
+.subheading{
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+  font-family: 'Amatic SC', Georgia, "Times New Roman", Times, serif;
+  color: #f6af33;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 50px 0;
+}
+
+
+.about-content p{
+  font-family: 'Alegreya', Georgia, "Times New Roman", Times, serif;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+
+}
+
+
+
+
+
+
+/* Menu */
+.header-bar{
+  background-image:url(../img/sweet3.jpg);
+  min-height:200px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: -3;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+
+ }
+.header-text{
+  padding-top:35px; 
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+.header-text h2{
+  font-size:60px;
+}
+.header-text p{
+  font-size:30px; 
+}
+
+.sub-heading{
+  text-align: center;
+}
+.sub-heading h2{
+  font-family: 'Sentinel SSm A','Sentinel SSm B';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+    letter-spacing: .03em;
+    margin: 1.2em 0;
+    text-transform: uppercase;
+    position: relative;
+    top: -1rem;
+}
+
+.sub-heading h3{
+  display: inline-block;
+    color: #2b2b2b;
+    font-weight:400;
+    font-size: 1.1em;
+    letter-spacing: .15em;
+    margin: 0 0 60px;
+    position: relative;
+    top: -3rem;
+}
+ .sub-heading h3 {
+  font-family: 'Verlag A','Verlag B';
+  font-style: normal;
+  text-transform: uppercase;
+ }
+
+ /*food items  */
+
+ .grid{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center;
+ }
+   .item h3{
+    font-family: 'Verlag A','Verlag B';
+    font-style: normal;
+    text-transform: uppercase;
+    color: #8e1717;
+    font-weight: 800;
+    font-size: 1.4em;
+    letter-spacing: .03em;
+    margin: 0 0 .8em;
+    position: relative;
+    top: -3rem;
+    
+  }
+  .item p{
+    position: relative;
+    top: -3rem;
+    color: #141414;
+    font-size: 1.4em;
+    line-height: 1.6em;
+
+
+  }
+ .grid .list1{
+   flex-basis:45%;
+   
+ }
+ .grid .list1 p{
+  padding: 0 1rem 3rem 3rem;
+ }
+ .grid .list1 h3{
+  padding: 0 0 0 3rem;
+ }
+
+
+ .grid .list2{
+  flex-basis:45%;
+}
+.grid .list2 p{
+  padding: 0 3rem 3rem 0;
+ }
+/* coffe heading */
+.header-bar2{
+  background-image:url(../img/sweet4.jpg);
+  min-height:200px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: -3;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+ }
+
+ /* coffee menu */
+ 
+ .coffe-grid{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center;
+   margin: 0 5rem;
+ }
+
+ .coffe-grid .item{
+  flex-basis: 30%;
+ }
+
+ /* location */
+ 
+ .img-grid{
+   position: relative;
+   display: inline-block;
+   margin:10px;
+   top: -2rem;
+}
+ .images{
+   height:300px;
+   width:370px;
+   display: block;
+ }
+
+.overlay{
+   position: absolute;
+   transition: all .5s ease;
+   opacity: 0;
+   background-color: rgba(0,0,0,.2);
+
+ }
+ .img-grid:hover .overlay{
+  opacity: 1;
+}
+
+ .text-box{
+   color:white;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 40px;
+ }
+
+ .overlayleft{
+   height: 100%;
+   width: 0;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.2);
+ }
+ .img-grid:hover .overlayleft{
+   width: 100%;
+ }
